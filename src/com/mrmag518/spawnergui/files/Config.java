@@ -6,9 +6,9 @@ import com.mrmag518.spawnergui.Spawnable;
 
 import java.io.File;
 import java.io.IOException;
+
 import org.bukkit.Bukkit;
 import org.bukkit.World;
-
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 

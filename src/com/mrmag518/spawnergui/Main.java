@@ -2,7 +2,6 @@ package com.mrmag518.spawnergui;
 
 import com.mrmag518.spawnergui.files.Config;
 import com.mrmag518.spawnergui.files.Database;
-
 import com.sk89q.worldguard.LocalPlayer;
 import com.sk89q.worldguard.bukkit.BukkitPlayer;
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
