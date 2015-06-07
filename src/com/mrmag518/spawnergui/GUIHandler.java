@@ -72,8 +72,8 @@ public class GUIHandler implements Listener {
         if(inv.getName().equals(name)) {
             eat();
             
-            if(Main.openGUIs.contains(p.getName())) {
-                Main.openGUIs.remove(p.getName());
+            if(SpawnerGUI.openGUIs.contains(p.getName())) {
+                SpawnerGUI.openGUIs.remove(p.getName());
             }
         }
     }

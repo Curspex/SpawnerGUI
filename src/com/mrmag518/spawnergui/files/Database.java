@@ -1,7 +1,7 @@
 package com.mrmag518.spawnergui.files;
 
 import com.mrmag518.spawnergui.Log;
-import com.mrmag518.spawnergui.Main;
+import com.mrmag518.spawnergui.SpawnerGUI;
 
 import java.io.File;
 import java.io.IOException;
@@ -40,7 +40,7 @@ public class Database {
     
     public static void reload() {
         if(databaseFile == null) {
-            databaseFile = new File(Main.instance.getDataFolder(), "db.yml");
+            databaseFile = new File(SpawnerGUI.i.getDataFolder(), "db.yml");
         }
         database = YamlConfiguration.loadConfiguration(databaseFile);
     }
@@ -64,12 +64,12 @@ public class Database {
     }
     
     public static void addSpawner(Block block, UUID owner) {
-        block.setMetadata("ProtectedSpawner", new FixedMetadataValue(Main.instance, owner));
+        block.setMetadata("ProtectedSpawner", new FixedMetadataValue(SpawnerGUI.i, owner));
     }
     
     public static void removeSpawner(Block block) {
         if(block.hasMetadata("ProtectedSpawner")) {
-            block.removeMetadata("ProtectedSpawner", Main.instance);
+            block.removeMetadata("ProtectedSpawner", SpawnerGUI.i);
         }
     }
     

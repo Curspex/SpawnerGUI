@@ -1,7 +1,7 @@
 package com.mrmag518.spawnergui.files;
 
 import com.mrmag518.spawnergui.Log;
-import com.mrmag518.spawnergui.Main;
+import com.mrmag518.spawnergui.SpawnerGUI;
 import com.mrmag518.spawnergui.Spawnable;
 
 import java.io.File;
@@ -68,7 +68,7 @@ public class Config {
     
     public static void reload() {
         if(configFile == null) {
-            configFile = new File(Main.instance.getDataFolder(), "config.yml");
+            configFile = new File(SpawnerGUI.i.getDataFolder(), "config.yml");
         }
         config = YamlConfiguration.loadConfiguration(configFile);
     }
